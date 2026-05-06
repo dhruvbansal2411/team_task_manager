@@ -1,98 +1,101 @@
-# Team Task Manager
+## 🚀 Live Demo
 
-A full-stack task management application built with React, Node.js, Express, and MongoDB.
+**Frontend:** https://abundant-growth-production-cd75.up.railway.app  
+**Backend API:** https://teamtaskmanager-production-a8e9.up.railway.app/api/health
+Phir push karo:
+bashgit add .
+git commit -m "docs: add live demo links to README"
+git push
+Isse GitHub pe aapke project page par seedha live link dikhega — recruiters aur friends ke liye perfect! 😊You said: give me full reademegive me full reademe18:23Claude responded: team-task-manager/markdown# Team Task Manager 🚀
 
-## Features
+A full-stack task management application for teams, built with React, Node.js, Express, and MongoDB.
 
-* User authentication (JWT)
-* Dashboard with task statistics
-* Project management
-* Team collaboration (add members)
-* Task creation and status tracking
-* Responsive design
+## 🌐 Live Demo
 
-## Tech Stack
+**Frontend:** https://abundant-growth-production-cd75.up.railway.app  
+**Backend API:** https://teamtaskmanager-production-a8e9.up.railway.app/api/health
 
-Frontend:
+## ✨ Features
 
-* React (Vite)
-* Tailwind CSS
-* Axios
+- 🔐 User authentication (JWT)
+- 📊 Dashboard with task statistics
+- 📁 Project management
+- 👥 Team collaboration (add members by email)
+- ✅ Task creation and status tracking
+- 📱 Responsive design
 
-Backend:
+## 🛠 Tech Stack
 
-* Node.js
-* Express
-* MongoDB (Mongoose)
-* JWT Authentication
-* bcrypt
+### Frontend
+- React (Vite)
+- Tailwind CSS
+- Axios
 
-## Installation
+### Backend
+- Node.js
+- Express
+- MongoDB (Mongoose)
+- JWT Authentication
+- bcrypt
+
+## 📁 Project Structure
+team-task-manager/
+├── backend/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   └── server.js
+├── frontend/
+│   ├── src/
+│   └── vite.config.js
+└── README.md
+
+## ⚙️ Installation
 
 ### Backend Setup
-
+```bash
 cd backend
 npm install
+```
 
-Create `.env`:
-
+Create `.env` file:
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 PORT=5000
 
 Run:
+```bash
 npm run dev
-
----
+```
 
 ### Frontend Setup
-
+```bash
 cd frontend
 npm install
 npm run dev
+```
 
----
+## 🔗 API Endpoints
 
-## Running
-
-Frontend:
-http://localhost:5174
-
-Backend:
-http://localhost:5000
-
----
-
-## API Endpoints
-
-Auth:
-POST /api/auth/signup
+### Auth
+POST /api/auth/register
 POST /api/auth/login
 
-Projects:
-GET /api/projects
+### Projects
+GET  /api/projects
 POST /api/projects
-POST /api/projects/add-member
+POST /api/projects/:id/members
 
-Tasks:
-POST /api/tasks
-GET /api/tasks/project/:id
-PUT /api/tasks/:id
+### Tasks
+POST  /api/tasks
+GET   /api/tasks/project/:id
+PATCH /api/tasks/:id/status
 
-Dashboard:
-GET /api/dashboard
+### Dashboard
+GET /api/dashboard/stats
 
----
+## 👤 Author
 
-## Project Structure
-
-team-task-manager/
-├── backend/
-├── frontend/
-└── README.md
-
----
-
-## Author
-
-Dhruv Bansal
+**Dhruv Bansal**  
+GitHub: [@dhruvbansal2411](https://github.com/dhruvbansal2411)
