@@ -1,12 +1,4 @@
-## 🚀 Live Demo
-
-**Frontend:** https://abundant-growth-production-cd75.up.railway.app  
-**Backend API:** https://teamtaskmanager-production-a8e9.up.railway.app/api/health
-Phir push karo:
-bashgit add .
-git commit -m "docs: add live demo links to README"
-git push
-Isse GitHub pe aapke project page par seedha live link dikhega — recruiters aur friends ke liye perfect! 😊You said: give me full reademegive me full reademe18:23Claude responded: team-task-manager/markdown# Team Task Manager 🚀
+# Team Task Manager 🚀
 
 A full-stack task management application for teams, built with React, Node.js, Express, and MongoDB.
 
@@ -39,6 +31,8 @@ A full-stack task management application for teams, built with React, Node.js, E
 - bcrypt
 
 ## 📁 Project Structure
+
+```
 team-task-manager/
 ├── backend/
 │   ├── controllers/
@@ -50,6 +44,7 @@ team-task-manager/
 │   ├── src/
 │   └── vite.config.js
 └── README.md
+```
 
 ## ⚙️ Installation
 
@@ -60,9 +55,11 @@ npm install
 ```
 
 Create `.env` file:
+```
 MONGODB_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 PORT=5000
+```
 
 Run:
 ```bash
@@ -79,21 +76,29 @@ npm run dev
 ## 🔗 API Endpoints
 
 ### Auth
+```
 POST /api/auth/register
 POST /api/auth/login
+```
 
 ### Projects
+```
 GET  /api/projects
 POST /api/projects
 POST /api/projects/:id/members
+```
 
 ### Tasks
+```
 POST  /api/tasks
 GET   /api/tasks/project/:id
 PATCH /api/tasks/:id/status
+```
 
 ### Dashboard
+```
 GET /api/dashboard/stats
+```
 
 ## 👤 Author
 
