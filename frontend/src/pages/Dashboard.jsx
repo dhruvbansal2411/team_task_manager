@@ -127,7 +127,7 @@ const Dashboard = () => {
               </h1>
               <p className="mt-3 text-base text-slate-600">
                 {activeTasks > 0
-                  ? `You have ${activeTasks} ${activeTaskLabel}. Stay productive 🚀`
+                  ? `You have ${activeTasks} ${activeTaskLabel}. Stay productive `
                   : 'No active tasks right now. Ready to plan the next win?'}
               </p>
             </div>
@@ -225,7 +225,7 @@ const Dashboard = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                           </svg>
                         </div>
-                        <p className="font-semibold text-slate-800">No activity yet. Create your first task 🚀</p>
+                        <p className="font-semibold text-slate-800">No activity yet. Create your first task </p>
                         <p className="mt-2 text-sm text-slate-500">Create a project, add members, and start assigning work.</p>
                       </div>
                     </div>

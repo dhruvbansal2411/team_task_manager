@@ -330,7 +330,7 @@ const ProjectDetail = () => {
                       </div>
                       {isOverdue(task.dueDate, task.status) && (
                         <div className="text-xs text-red-600 font-semibold mb-2">
-                          ⚠️ OVERDUE
+                           OVERDUE
                         </div>
                       )}
                       <select
