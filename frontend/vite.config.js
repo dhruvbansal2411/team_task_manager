@@ -5,7 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: '../backend/public'
+    outDir: 'dist'
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 4173,
+    allowedHosts: ['abundant-growth-production-cd75.up.railway.app']
   },
   server: {
     proxy: {
