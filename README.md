@@ -1,106 +1,58 @@
-# Team Task Manager 🚀
+Team Task Manager
+A task management app for small teams — create projects, assign tasks, and track progress together.
+Live
 
-A full-stack task management application for teams, built with React, Node.js, Express, and MongoDB.
+Frontend: https://abundant-growth-production-cd75.up.railway.app
+API: https://teamtaskmanager-production-a8e9.up.railway.app/api/health
 
-## 🌐 Live Demo
+What it does
 
-**Frontend:** https://abundant-growth-production-cd75.up.railway.app  
-**Backend API:** https://teamtaskmanager-production-a8e9.up.railway.app/api/health
+Register and log in with a secure account
+Create projects and invite teammates by email
+Add tasks with deadlines and assignees
+Track task status from a shared dashboard
+Works on mobile and desktop
 
-## ✨ Features
-
-- 🔐 User authentication (JWT)
-- 📊 Dashboard with task statistics
-- 📁 Project management
-- 👥 Team collaboration (add members by email)
-- ✅ Task creation and status tracking
-- 📱 Responsive design
-
-## 🛠 Tech Stack
-
-### Frontend
-- React (Vite)
-- Tailwind CSS
-- Axios
-
-### Backend
-- Node.js
-- Express
-- MongoDB (Mongoose)
-- JWT Authentication
-- bcrypt
-
-## 📁 Project Structure
-
-```
-team-task-manager/
+Tech
+Frontend — React, Vite, Tailwind CSS, Axios
+Backend — Node.js, Express, MongoDB, JWT, bcrypt
+Deployed on — Railway
+Project structure
+team_task_manager/
 ├── backend/
 │   ├── controllers/
 │   ├── middleware/
 │   ├── models/
 │   ├── routes/
 │   └── server.js
-├── frontend/
-│   ├── src/
-│   └── vite.config.js
-└── README.md
-```
-
-## ⚙️ Installation
-
-### Backend Setup
-```bash
-cd backend
+└── frontend/
+    ├── src/
+    └── vite.config.js
+Running locally
+Backend
+bashcd backend
 npm install
-```
-
-Create `.env` file:
-```
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+Create a .env file:
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_secret
 PORT=5000
-```
-
-Run:
-```bash
-npm run dev
-```
-
-### Frontend Setup
-```bash
-cd frontend
+bashnpm run dev
+Frontend
+bashcd frontend
 npm install
 npm run dev
-```
+API
+POST   /api/auth/register
+POST   /api/auth/login
 
-## 🔗 API Endpoints
+GET    /api/projects
+POST   /api/projects
+POST   /api/projects/:id/members
 
-### Auth
-```
-POST /api/auth/register
-POST /api/auth/login
-```
+POST   /api/tasks
+GET    /api/tasks/project/:id
+PATCH  /api/tasks/:id/status
 
-### Projects
-```
-GET  /api/projects
-POST /api/projects
-POST /api/projects/:id/members
-```
-
-### Tasks
-```
-POST  /api/tasks
-GET   /api/tasks/project/:id
-PATCH /api/tasks/:id/status
-```
-
-### Dashboard
-```
-GET /api/dashboard/stats
-```
-
-## 👤 Author
-
-**Dhruv Bansal**  
-GitHub: [@dhruvbansal2411](https://github.com/dhruvbansal2411)
+GET    /api/dashboard/stats
+Author
+Dhruv Bansal — @dhruvbansal2411
